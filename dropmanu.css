@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:wght@300&family=Tapestry&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #67a5d4;
+
+}
+
+.card {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 15px 15px 0.2;
+    /* height: 25rem; */
+    height: 100px;
+    overflow: hidden;
+    
+
+    width: 17rem;
+    position: relative;
+    transition: height ease-in-out 0.5s;
+}
+.active{
+    height: 19rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px 15px; */
+    /* border: 2px solid red; */
+
+}
+
+.image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.content h2 {
+    margin-left: 10px;
+    color: #111;
+    font-size: 1.5rem;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Tapestry', cursive;
+}
+
+.content h2 span {
+    color: #999;
+    font-size: 0.9rem;
+    font-family: 'League Gothic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Tapestry', cursive;
+}
+
+.navigation{
+    border-top:  1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    padding-top: 20px;
+    
+}
+.navigation li{
+    list-style: none;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.navigation li a{
+    font-size: 20px;
+    color: #555;
+    text-decoration: none;
+}
+.navigation li ion-icon{
+    font-size: 1.3rem;
+    padding: 0px 10px;
+}
+.navigation li:hover{
+    color: #36b3ff;
+    transition: 0.25s;
+}
+.navigation li a:hover{
+    color: #36b3ff;
+    transition: 0.25s;
+}
+
+.toogle{
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    background: #36b3ff;
+}
+.toogle ion-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.active .toogle ion-icon{
+    transform: rotate(180deg);
+ 
+}
+
+/* .active{
+    transform: rotate(180deg);
+    height: 100px;
+    overflow: hidden;
+} */
